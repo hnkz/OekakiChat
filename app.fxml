@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.input.* ?>
+<?import javafx.scene.canvas.*?>
+
+<VBox fx:controller="AppController" xmlns:fx="http://javafx.com/fxml" Spacing = "10">
+  <padding>
+    <Insets top="10" right="10" bottom="10" left="10"/>
+  </padding>
+
+  <children>
+	<Canvas fx:id="canvas" width="720" height="500" />
+
+    <HBox>
+      <children>
+		<Button text="Accept" prefWidth="120" onAction="#AcceptButtonAction"/>
+		<Button text="Connect" prefWidth="120" onAction="#ConnectButtonAction"/>
+        <Button text="Eraser" prefWidth="120" onAction="#EraserButtonAction"/>
+		<Button text="PenSize" prefWidth="120" onAction="#PenSizeButtonAction"/>
+		<Button text="PenColor" prefWidth="120" onAction="#PenColorButtonAction"/>
+		<Button text="Clear" prefWidth="120" onAction="#ClearButtonAction"/>
+      </children>
+    </HBox>
+    <HBox>
+      <Label text="" fx:id="textField1" prefWidth="600"/>
+    </HBox>
+    <HBox>
+      <Label text="" fx:id="textField2" prefWidth="600"/>
+    </HBox>
+    <HBox>
+      <Label text="" fx:id="textField3" prefWidth="600"/>
+    </HBox>
+    <HBox>
+      <children>
+        <TextField fx:id="sendTextField" prefWidth="620"/>
+        <Button text="Send" prefWidth="100" onAction="#TextSendButtonAction"/>
+      </children>
+    </HBox>
+  </children>
+
+</VBox>
